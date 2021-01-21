@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+E:/ECE/428/Lab/project_1/project_1.sim/sim_1/synth/func/xsim/Node_test_func_synth.v,1605816887,verilog,,E:/ECE/428/Lab/project_1/project_1.srcs/sim_1/new/Node_test.v,,Acc;Acc_Ctrl;Add18;Add18_0;Add19;Add22;MAC;Mac_Acc;Node;Sigmoid;glbl;mult8x8;mult8x8_1;mult8x8_10;mult8x8_11;mult8x8_12;mult8x8_13;mult8x8_14;mult8x8_15;mult8x8_2;mult8x8_3;mult8x8_4;mult8x8_5;mult8x8_6;mult8x8_7;mult8x8_8;mult8x8_9;sigmoid_0;sigmoid_0_dist_mem_gen_0;sigmoid_0_dist_mem_gen_v8_0_10;sigmoid_0_dist_mem_gen_v8_0_10_synth;sigmoid_0_rom;sigmoid_0_sigmoid,,,,,,,,
+E:/ECE/428/Lab/project_1/project_1.srcs/sim_1/new/Acc_Test.v,1605724726,verilog,,,,Acc_Test,,,,,,,,
+E:/ECE/428/Lab/project_1/project_1.srcs/sim_1/new/Mac_Acc_test.v,1605727507,verilog,,,,Mac_Acc_test,,,,,,,,
+E:/ECE/428/Lab/project_1/project_1.srcs/sim_1/new/Node_test.v,1605809180,verilog,,,,Node_test,,,,,,,,
+E:/ECE/siu.edu_user_sigmoid_1.0/sim_1/new/test_sigmoid.v,1605740890,verilog,,,,test_sigmoid,,,,,,,,

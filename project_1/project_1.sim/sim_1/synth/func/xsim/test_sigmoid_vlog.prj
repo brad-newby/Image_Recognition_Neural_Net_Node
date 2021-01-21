@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"test_sigmoid_func_synth.v" \
+"../../../../../../../../siu.edu_user_sigmoid_1.0/sim_1/new/test_sigmoid.v" \
+
+# Do not sort compile order
+nosort

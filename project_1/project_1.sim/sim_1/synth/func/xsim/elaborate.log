@@ -1,0 +1,63 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: S:/.xinstall/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 0cccd1485f7b4bd28b6884c1711da8c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot Node_test_func_synth xil_defaultlib.Node_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.Add18
+Compiling module xil_defaultlib.Add18_0
+Compiling module xil_defaultlib.Add19
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.mult8x8
+Compiling module xil_defaultlib.mult8x8_1
+Compiling module xil_defaultlib.mult8x8_2
+Compiling module xil_defaultlib.mult8x8_3
+Compiling module xil_defaultlib.mult8x8_4
+Compiling module xil_defaultlib.mult8x8_5
+Compiling module xil_defaultlib.mult8x8_6
+Compiling module xil_defaultlib.mult8x8_7
+Compiling module xil_defaultlib.mult8x8_8
+Compiling module xil_defaultlib.mult8x8_9
+Compiling module xil_defaultlib.mult8x8_10
+Compiling module xil_defaultlib.mult8x8_11
+Compiling module xil_defaultlib.mult8x8_12
+Compiling module xil_defaultlib.mult8x8_13
+Compiling module xil_defaultlib.mult8x8_14
+Compiling module xil_defaultlib.mult8x8_15
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.Add22
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.Acc_Ctrl
+Compiling module xil_defaultlib.Acc
+Compiling module xil_defaultlib.Mac_Acc
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.MUXF8
+Compiling module xil_defaultlib.sigmoid_0_rom
+Compiling module xil_defaultlib.sigmoid_0_dist_mem_gen_v8_0_10_s...
+Compiling module xil_defaultlib.sigmoid_0_dist_mem_gen_v8_0_10
+Compiling module xil_defaultlib.sigmoid_0_dist_mem_gen_0
+Compiling module xil_defaultlib.sigmoid_0_sigmoid
+Compiling module xil_defaultlib.sigmoid_0
+Compiling module xil_defaultlib.Sigmoid
+Compiling module xil_defaultlib.Node
+Compiling module xil_defaultlib.Node_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Node_test_func_synth

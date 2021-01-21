@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov 19 14:13:14 2020
+# Process ID: 7532
+# Current directory: E:/ECE/428/Lab/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log Node.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Node.tcl
+# Log file: E:/ECE/428/Lab/project_1/project_1.runs/synth_1/Node.vds
+# Journal file: E:/ECE/428/Lab/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Node.tcl -notrace

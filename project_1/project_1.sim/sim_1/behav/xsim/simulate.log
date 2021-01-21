@@ -1,0 +1,7 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+$finish called at time : 41582 ns : File "E:/ECE/siu.edu_user_sigmoid_1.0/sim_1/new/test_sigmoid.v" Line 51
+WARNING: File descriptor (-20000) passed to $fdisplay in file E:/ECE/siu.edu_user_sigmoid_1.0/sim_1/new/test_sigmoid.v at line 44 is not valid.
+WARNING: File/Multi-channel descriptor (-20000) passed to $fclose in file E:/ECE/siu.edu_user_sigmoid_1.0/sim_1/new/test_sigmoid.v at line 50 is not valid.
+$finish called at time : 41622 ns : File "E:/ECE/siu.edu_user_sigmoid_1.0/sim_1/new/test_sigmoid.v" Line 51

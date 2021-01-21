@@ -1,0 +1,548 @@
+
+*** Running vivado
+    with args -log sigmoid_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sigmoid_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source sigmoid_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE/siu.edu_user_sigmoid_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'S:/.xinstall/Vivado/2020.1/data/ip'.
+Command: synth_design -top sigmoid_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11428
+WARNING: [Synth 8-2611] redeclaration of ansi port dataOUT is not allowed [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/saturationLogic.v:30]
+WARNING: [Synth 8-2611] redeclaration of ansi port dataOUT is not allowed [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/dataConv.v:29]
+WARNING: [Synth 8-2611] redeclaration of ansi port addrOUT is not allowed [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/addrConv.v:29]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1041.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_0' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/synth/sigmoid_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/sigmoid.v:23]
+INFO: [Synth 8-6157] synthesizing module 'addrConv' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/addrConv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'addrConv' (1#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/addrConv.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 512 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: dist_mem_gen_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 6 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_10' declared at 'e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/dist_mem_gen_v8_0_10/sources_1/ip/dist_mem_gen_0/dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0.vhd:78' bound to instance 'U0' of component 'dist_mem_gen_v8_0_10' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (5#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:66]
+INFO: [Synth 8-6157] synthesizing module 'dataConv' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/dataConv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dataConv' (6#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/dataConv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'saturationLogic' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/saturationLogic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'saturationLogic' (7#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/saturationLogic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid' (8#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/sigmoid.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_0' (9#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/synth/sigmoid_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1069.324 ; gain = 27.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1069.324 ; gain = 27.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1069.324 ; gain = 27.473
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1069.324 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 'clk'. [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc:53]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc:53]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/ECE/428/Lab/project_1/project_1.runs/sigmoid_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/ECE/428/Lab/project_1/project_1.runs/sigmoid_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1157.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1158.629 ; gain = 1.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1158.629 ; gain = 116.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1158.629 ; gain = 116.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/ECE/428/Lab/project_1/project_1.runs/sigmoid_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1158.629 ; gain = 116.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1158.629 ; gain = 116.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1158.629 ; gain = 116.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++---------------------+-------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                            | Depth x Width | Implemented As | 
++---------------------+-------------------------------------------------------+---------------+----------------+
+|rom                  | rom[511]                                              | 512x6         | LUT            | 
+|dist_mem_gen_v8_0_10 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[511] | 512x6         | LUT            | 
++---------------------+-------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1158.629 ; gain = 116.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1158.629 ; gain = 116.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1175.598 ; gain = 133.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1181.383 ; gain = 139.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1181.383 ; gain = 139.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1181.383 ; gain = 139.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1181.383 ; gain = 139.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1181.383 ; gain = 139.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1181.383 ; gain = 139.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     4|
+|2     |LUT3  |     5|
+|3     |LUT4  |     6|
+|4     |LUT5  |    16|
+|5     |LUT6  |    26|
+|6     |MUXF7 |     6|
+|7     |MUXF8 |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1181.383 ; gain = 139.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 1181.383 ; gain = 50.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1181.383 ; gain = 139.531
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1189.848 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+*** Running vivado
+    with args -log sigmoid_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sigmoid_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source sigmoid_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE/siu.edu_user_sigmoid_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'S:/.xinstall/Vivado/2020.1/data/ip'.
+Command: synth_design -top sigmoid_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9452
+WARNING: [Synth 8-2611] redeclaration of ansi port dataOUT is not allowed [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/saturationLogic.v:30]
+WARNING: [Synth 8-2611] redeclaration of ansi port dataOUT is not allowed [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/dataConv.v:29]
+WARNING: [Synth 8-2611] redeclaration of ansi port addrOUT is not allowed [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/addrConv.v:29]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1042.887 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_0' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/synth/sigmoid_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/sigmoid.v:23]
+INFO: [Synth 8-6157] synthesizing module 'addrConv' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/addrConv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'addrConv' (1#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/addrConv.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 512 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: dist_mem_gen_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 6 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_10' declared at 'e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/dist_mem_gen_v8_0_10/sources_1/ip/dist_mem_gen_0/dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0.vhd:78' bound to instance 'U0' of component 'dist_mem_gen_v8_0_10' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (5#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:66]
+INFO: [Synth 8-6157] synthesizing module 'dataConv' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/dataConv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dataConv' (6#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/dataConv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'saturationLogic' [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/saturationLogic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'saturationLogic' (7#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/saturationLogic.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid' (8#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/new/sigmoid.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_0' (9#1) [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/synth/sigmoid_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1068.883 ; gain = 25.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1068.883 ; gain = 25.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1068.883 ; gain = 25.996
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1068.883 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 'clk'. [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc:53]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc:53]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [e:/ECE/428/Lab/project_1/project_1.srcs/sources_1/ip/sigmoid_0_2/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/ECE/428/Lab/project_1/project_1.runs/sigmoid_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/ECE/428/Lab/project_1/project_1.runs/sigmoid_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1131.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1136.430 ; gain = 5.090
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1136.430 ; gain = 93.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1136.430 ; gain = 93.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/ECE/428/Lab/project_1/project_1.runs/sigmoid_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1136.430 ; gain = 93.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1136.430 ; gain = 93.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1136.430 ; gain = 93.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++---------------------+-------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                            | Depth x Width | Implemented As | 
++---------------------+-------------------------------------------------------+---------------+----------------+
+|rom                  | rom[511]                                              | 512x6         | LUT            | 
+|dist_mem_gen_v8_0_10 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[511] | 512x6         | LUT            | 
++---------------------+-------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.676 ; gain = 110.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.676 ; gain = 110.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1173.242 ; gain = 130.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1180.031 ; gain = 137.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1180.031 ; gain = 137.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1180.031 ; gain = 137.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1180.031 ; gain = 137.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1180.031 ; gain = 137.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1180.031 ; gain = 137.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     4|
+|2     |LUT3  |     5|
+|3     |LUT4  |     6|
+|4     |LUT5  |    16|
+|5     |LUT6  |    26|
+|6     |MUXF7 |     6|
+|7     |MUXF8 |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1180.031 ; gain = 137.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1180.031 ; gain = 69.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1180.031 ; gain = 137.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1189.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1197.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 4 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1197.129 ; gain = 154.242
+INFO: [Common 17-1381] The checkpoint 'E:/ECE/428/Lab/project_1/project_1.runs/sigmoid_0_synth_1/sigmoid_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/ECE/428/Lab/project_1/project_1.runs/sigmoid_0_synth_1/sigmoid_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sigmoid_0_utilization_synth.rpt -pb sigmoid_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 19 14:13:12 2020...
